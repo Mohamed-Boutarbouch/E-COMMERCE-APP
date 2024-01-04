@@ -2,7 +2,7 @@ import { useDispatch } from 'react-redux';
 
 import { decrement, increment } from '@/features/product/productSlice';
 
-export default function Counter({ count }) {
+export const Counter = ({ count }) => {
   const dispatch = useDispatch();
 
   return (
@@ -16,4 +16,4 @@ export default function Counter({ count }) {
       </button>
     </div>
   );
-}
+};

@@ -45,4 +45,4 @@ export const productSlice = createSlice({
 
 export const { increment, decrement } = productSlice.actions;
 
-export default productSlice.reducer;
+export const productReducer = productSlice.reducer;

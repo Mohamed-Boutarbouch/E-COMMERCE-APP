@@ -1,8 +1,8 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import Home from '@/pages/Home';
+import { Home } from '@/pages/Home';
 
-const App = () => {
+export const App = () => {
   return (
     <Routes>
       <Route path="/" element={<Navigate to="/home" replace />} />
@@ -10,5 +10,3 @@ const App = () => {
     </Routes>
   );
 };
-
-export default App;

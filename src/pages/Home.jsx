@@ -2,10 +2,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 
 import { fetchProducts } from '@/services/products';
-import DisplayProducts from '@/components/DisplayProducts';
-import Counter from '@/components/Counter';
+import { DisplayProducts } from '@/components/DisplayProducts';
+import { Counter } from '@/components/Counter';
 
-const Home = () => {
+export const Home = () => {
   const { value: count, products, loading, error } = useSelector((state) => state.product);
   const dispatch = useDispatch();
 
@@ -28,5 +28,3 @@ const Home = () => {
     </main>
   );
 };
-
-export default Home;
