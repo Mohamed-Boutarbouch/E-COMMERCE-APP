@@ -4,7 +4,6 @@ import { useEffect } from 'react';
 import { fetchProducts } from '@/services/products';
 import { DisplayProducts } from '@/components/DisplayProducts';
 import { Counter } from '@/components/Counter';
-import Nav from '@/components/Nav';
 
 export const Home = () => {
   const { value: count, products, loading, error } = useSelector((state) => state.product);
@@ -24,7 +23,6 @@ export const Home = () => {
 
   return (
     <main>
-      <Nav />
       <Counter count={count} />
       <DisplayProducts products={products} />
     </main>
